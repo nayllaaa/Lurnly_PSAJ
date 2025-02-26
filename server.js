@@ -21,6 +21,20 @@ app.get('/detailproduct', (req, res) => {
     res.render('detailproduct', { title: "Scholar Home" });
 });
 
+app.get('/register', (req, res) => {
+    res.render('register', { title: "Scholar Home" });
+});
+
+app.get('/login', (req, res) => {
+    res.render('login', { title: "Scholar Home" });
+});
+
+app.get('/home', (req, res) => {
+    res.render('home', { title: "Scholar Home" });
+});
+
+
+
 // Jalankan server
 const PORT = 3000;
 app.listen(PORT, () => {
